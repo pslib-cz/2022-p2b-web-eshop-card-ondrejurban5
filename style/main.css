@@ -1,0 +1,190 @@
+:root {
+    --img_width: 230px;
+}
+main {
+    display: flex;
+    flex-shrink: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.karta {
+    display: block;
+    border: 1px solid lightgray;
+    max-width: 270px;
+    padding: 20px 20px 45px 20px;
+    margin: 0;
+    
+}
+.karta__header > img {
+
+    max-width: var(--img_width);
+    min-width: var(--img_width);
+    height: 200px;
+}
+
+.karta__header > .img__1 {
+    content: url(img/powerbanka2.jpg);
+}
+
+.karta__header > .img__2 {
+    content: url(img/xiaomi-mi-50w-power-bank-20000mah-439287--9.jpg);
+}
+
+.karta__header > .img__3 {
+    content: url(img/powerbanka3.jpg);
+}
+
+.karta__header > .img__4 {
+    content: url(img/powerbanka4.jpg);
+}
+
+.karta__header > .img__5 {
+    content: url(img/powerbanka5.jpg);
+}
+
+.karta__header > .img__6 {
+    content: url(img/powerbanka6.jpg);
+}
+
+.karta__header > .img__7 {
+    content: url(img/powerbanka7.jpg);
+}
+
+.karta__header > .img__8 {
+    content: url(img/powerbanka8.jpg);
+}
+
+
+
+.karta__header {
+    position: relative;
+}
+
+.karta__header > p {
+ font-weight: bold;
+ margin: 0 auto;
+ text-align: center;
+}
+
+h1 {
+    font-size: 130%;
+    text-align: center;
+    max-width: var(--img_width);
+    
+}
+.karta_title > h1 {
+    max-height: fit-content;
+    width: 270px;
+}
+
+.karta__footer { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+
+.karta__ceny > p {
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-decoration: line-through;
+}
+
+.karta__ceny > p:first-of-type {
+    color: rgb(34, 214, 34);
+    font-size: 120%;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 ;
+
+}
+
+
+.karta__cta > a  {
+    background-color: rgb(34, 214, 34);
+    text-align: center;
+    display: inline-block;
+    padding: 11px;
+    padding-left: 30px ;
+    padding-right: 30px;
+    border-radius: 3px;
+    color: white;
+    font-size: 80%;
+
+}
+
+a:link { text-decoration: none; 
+}
+
+a:visited { text-decoration: none; 
+}
+
+a:hover { text-decoration: none; 
+}
+
+a:active { text-decoration: none; 
+}
+
+.karta__slevy {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    z-index: auto;
+    top: 0;
+    left: 0;
+}
+
+.karta__slevy > p {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: white;
+    margin-left: 0;
+    
+}
+
+.karta__slevy > .absolute__barva1 {
+    background-color: darkred;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.karta__slevy > .absolute__barva2 {
+    background-color: red;
+    border-radius: 3px;
+    padding: 2px;
+    display: inline-block;
+    
+}
+
+.karta__slevy > .absolute__barva3 {
+    background-color: blue;
+    border-radius: 3px;
+    padding: 2px;
+    display: inline-block;
+    
+}
+
+
+.karta__cta > a:hover {
+    background-color: darkgreen;
+}
+
+h1:hover::first-line {
+    text-decoration: underline;
+}
+
+.karta:hover {
+    /*border:4px gray groove; = nefacha*/ 
+    box-shadow: 0 0 15px 1px rgba(221,221,221,0.75)
+}
